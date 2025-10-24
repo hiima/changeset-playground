@@ -72,7 +72,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           RELEASES=$(node .github/scripts/detect-releases.js ${{ github.event.pull_request.number }})
-          echo "releases=$RELEASES" >> $GITHUB_OUTPUT
+          echo "releases<<EOF" >> $GITHUB_OUTPUT
+          echo "$RELEASES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
           echo "Release targets:"
           echo "$RELEASES" | jq -r '.[] | "  - \(.name)@\(.version)"'
 
