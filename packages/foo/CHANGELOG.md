@@ -1,5 +1,11 @@
 # foo
 
+## 2.0.0
+
+### Major Changes
+
+- b168278: major foo bar
+
 ## 1.0.5
 
 ### Patch Changes
