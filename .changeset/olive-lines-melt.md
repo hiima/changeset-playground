@@ -1,0 +1,5 @@
+---
+"foo": patch
+---
+
+update foo
