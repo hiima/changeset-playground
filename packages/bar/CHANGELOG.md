@@ -1,5 +1,11 @@
 # bar
 
+## 2.0.2
+
+### Patch Changes
+
+- 212c54f: bar
+
 ## 2.0.1
 
 ### Patch Changes
