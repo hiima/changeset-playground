@@ -1,5 +1,11 @@
 # foo
 
+## 1.0.4
+
+### Patch Changes
+
+- 6128892: foo 7890
+
 ## 1.0.3
 
 ### Patch Changes
