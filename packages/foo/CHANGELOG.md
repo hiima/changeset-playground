@@ -1,5 +1,11 @@
 # foo
 
+## 1.0.5
+
+### Patch Changes
+
+- 2f3332b: foo 234
+
 ## 1.0.4
 
 ### Patch Changes
