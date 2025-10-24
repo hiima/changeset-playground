@@ -1,5 +1,11 @@
 # bar
 
+## 2.0.1
+
+### Patch Changes
+
+- 2fe2c65: yo yo
+
 ## 2.0.0
 
 ### Major Changes
