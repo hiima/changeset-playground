@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   create-release-pr:
-    name: Create Release Pull Request
+    name: Create Release PR
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
@@ -106,3 +106,13 @@ jobs:
 
             echo "✅ Created release: $TAG"
           done
+
+      - name: Notify Slack
+        run: |
+          RELEASES='${{ steps.detect.outputs.releases }}'
+
+          MESSAGE=$(echo "$RELEASES" | jq -r '"リリースされました。\n\n" + (map("\(.name)@\(.version)\n\(.changelog)") | join("\n\n"))')
+
+          curl -X POST https://hooks.slack.com/triggers/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 \
+            -H 'Content-Type: application/json' \
+            -d "$(jq -n --arg msg "$MESSAGE" '{message: $msg}')"
