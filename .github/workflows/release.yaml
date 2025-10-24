@@ -111,7 +111,7 @@ jobs:
         run: |
           RELEASES='${{ steps.detect.outputs.releases }}'
 
-          MESSAGE=$(echo "$RELEASES" | jq -r '"リリースされました。\n\n" + (map("`\(.name)@\(.version)`\n\(.changelog)") | join("\n\n"))')
+          MESSAGE=$(echo "$RELEASES" | jq -r '"リリースされました。\n\n" + (map("\(.name)@\u200b\(.version)\n\(.changelog)") | join("\n\n"))')
 
           curl -X POST https://hooks.slack.com/triggers/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 \
             -H 'Content-Type: application/json' \
