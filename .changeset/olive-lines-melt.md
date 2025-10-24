@@ -1,5 +1,0 @@
----
-"foo": patch
----
-
-update foo
