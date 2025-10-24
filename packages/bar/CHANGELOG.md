@@ -1,5 +1,11 @@
 # bar
 
+## 1.0.4
+
+### Patch Changes
+
+- 2b6a955: bar 123
+
 ## 1.0.3
 
 ### Patch Changes

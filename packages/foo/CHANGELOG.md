@@ -1,5 +1,11 @@
 # foo
 
+## 1.0.3
+
+### Patch Changes
+
+- 2b6a955: foo 456
+
 ## 1.0.2
 
 ### Patch Changes
