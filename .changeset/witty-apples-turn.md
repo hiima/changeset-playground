@@ -1,0 +1,5 @@
+---
+"bar": patch
+---
+
+update bar
